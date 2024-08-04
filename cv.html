@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="adal">
+    <nav id="nav5">
+        <div class="logo"><h1 id="dark">Portfolio</h1></div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menubar">
+            <i id="icon5" class="fa-solid fa-bars-staggered"></i>
+        </label>
+        <ul id="ul-list5" style="z-index: 2;">
+            <li><a href="/index.html" id="dark2">Home</a></li>
+            <li><a href="/myintro.html" id="dark3">Intro</a></li>
+            <li><a href="/blog.html" id="dark4">Blog</a></li>
+            <li><a href="/contact.html" id="dark5">Contact</a></li>
+            <li>
+                <div class="toggle-btn">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox" class="label-container">
+                        <span class="toggle-ball"></span>
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <main class="fixed" style="overflow: hidden;">
+       <div class="cv">
+        <h1 class="cvheading" id="cv1">Abdul Samad Nizamani</h1>
+        <h2 class="cvheading2"><span id="element"></span></h2>
+        <div class="aboutcv">
+            <h3 class="cvheading3" style="z-index: -1;" id="cv2">About Me</h3>
+            <p class="cvparagraph" id="cv3">Hello! I am Abdul Samad Nizamani, a passionate Full Stack Developer with a knack for creating clean code and captivating web animations. My goal is to craft seamless user experiences through innovative front-end solutions and robust back-end functionalities.</p>
+        </div>
+        <div class="skillcv" data-aos="flip-up">
+            <h1 class="skillcvheading" id="cv4">Skills</h1>
+            <p class="skillcvparagraph" id="cv5">Frontend: HTML5, CSS3, JavaScript, jQuery, ReactJS
+                <br>
+                Backend: Python, Django
+                <br>
+                Other Technologies: Git, RESTful APIs, Responsive Design</p>
+        </div>
+        <div class="cvexperience"data-aos="flip-down">
+            <h1 class="cvexperienceheading" id="cv6">Professional Experience</h1>
+            <p class="cvexperienceparagraph" id="cv7">My Professional Experience has been a journey of self-discovery and growth.</p>
+        </div>
+        <div class="cvexperience" data-aos="flip-up">
+            <h1 class="cvexperienceheading" id="cv8">Personal Interests</h1>
+            <p class="cvexperienceparagraph" id="cv9">Exploring new technologies and frameworks
+                <br>
+                Contributing to open-source projects
+                <br>
+                Writing tech blogs and tutorials</p>
+        </div>
+        <div class="cvexperience" data-aos="flip-down">
+            <h1 class="cvexperienceheading" id="cv10">Education</h1>
+            <p class="cvexperienceparagraph" id="cv11">Intermediate in pre-Engineering
+                <br>
+                City:Hyderabad Sindh
+                <br>
+                Year Intermediate: 2024</p>
+        </div>
+        <div class="cvexperience" data-aos="flip-up">
+            <h1 class="cvexperienceheading" id="cv12">Contact</h1>
+            <p class="cvexperienceparagraph" id="cv13">Email: abdulsamad6178@gmail.com
+                <br>
+                LinkedIn: https://www.linkedin.com/feed/
+                <br>
+                Portfolio: Samad Nizamani.com</p>
+        </div>
+        <div class="cvexperience" data-aos="flip-down">
+            <h1 class="cvexperienceheading" id="cv14">Contact</h1>
+            <p class="cvexperienceparagraph" id="cv15">Email: abdulsamad6178@gmail.com
+                <br>
+                LinkedIn: https://www.linkedin.com/feed/
+                <br>
+                Portfolio: Samad Nizamani.com</p>
+        </div>
+       </div>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration: 800,
+      });
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Full Stack Developer', 'I can provide clean code','With the More interactive','Web animations', 'Full Stack Developer',],
+          typeSpeed: 80,
+        });
+      </script>
+      <script src="index.js"></script>
+</body>
+</html>
